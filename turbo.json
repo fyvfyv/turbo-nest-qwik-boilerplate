@@ -3,13 +3,16 @@
   "ui": "tui",
   "tasks": {
     "build": {
-      "dependsOn": ["^build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"]
+      "dependsOn": ["^clear","^build"],
+      "outputs": ["dist/**"]
     },
+    "clear": {},
     "lint": {
       "dependsOn": ["^lint"]
     },
+    "format": {},
     "dev": {
+      "dependsOn": ["^clear", "^build"],
       "cache": false,
       "persistent": true
     }
