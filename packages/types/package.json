@@ -6,9 +6,9 @@
   "scripts": {
     "clear": "rimraf ./dist",
     "build": "tsc -b",
-    "format": "prettier --write \"src/**/*.ts\"",
+    "format": "biome check . --write",
     "dev": "tsc -b -w",
-    "lint": "eslint \"{src}/**/*.ts\" --fix"
+    "lint": "biome check ."
   },
   "dependencies": {
     "class-transformer": "^0.5.1",
