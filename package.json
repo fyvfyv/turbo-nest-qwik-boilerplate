@@ -1,5 +1,5 @@
 {
-  "name": "turbo-nest-qwik-boilerplate",
+  "name": "@tnq/main",
   "private": true,
   "description": "Turborepo: NestJS + Qwik",
   "version": "0.0.1",
@@ -13,7 +13,13 @@
   "devDependencies": {
     "prettier": "^3.3.3",
     "turbo": "^2.0.14",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "@typescript-eslint/eslint-plugin": "^8.2.0",
+    "@typescript-eslint/parser": "^8.2.0",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "@types/eslint": "9.6.0"
   },
   "packageManager": "pnpm@9.8.0",
   "engines": {
