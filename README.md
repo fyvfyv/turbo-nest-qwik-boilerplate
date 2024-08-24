@@ -1,43 +1,33 @@
-# Turborepo starter
-
-This is an official starter Turborepo.
-
-## Using this example
-
-Run the following command:
-
-```sh
-npx create-turbo@latest
-```
+# Turborepo NestJS + QwikCity
 
 ## What's inside?
 
-This Turborepo includes the following packages/apps:
+This repo includes the following packages/apps:
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `@tnq/backend`: NestJS basic app
+- `@tnq/client`: QwikCity basic app
+- `@tnq/types`: Shared types between `@tnq/backend` and `@tnq/client`
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+Each package/app is [TypeScript](https://www.typescriptlang.org/).
 
 ### Utilities
 
-This Turborepo has some additional tools already setup for you:
+This repo has some additional tools already setup for you:
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+- [Biome](https://biomejs.dev/) for code linting and formatting (except of `@tnq/client`)
+- [ESLint](https://eslint.org/) for code linting (only for `@tnq/client`)
+- [Prettier](https://prettier.io) for code formatting (only for `@tnq/client`)
+
+ESLint and Prettier are used until [QwikCity supports Biome](https://github.com/QwikDev/qwik/issues/6648).
 
 ### Build
 
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
 pnpm build
 ```
 
@@ -46,27 +36,21 @@ pnpm build
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
 pnpm dev
 ```
 
-### Remote Caching
+### Lint and Format
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+To lint all apps and packages, run the following command:
 
 ```
-cd my-turborepo
-npx turbo login
+pnpm lint
 ```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+To auto-format all apps and packages, run the following command:
 
 ```
-npx turbo link
+pnpm format
 ```
 
 ## Useful Links
