@@ -1,6 +1,7 @@
 {
   "name": "@tnq/client",
   "description": "Blank project with routing included",
+  "author": "Oleg Petrov <fyvfyv@fyvfyv.com>",
   "engines": {
     "node": ">=20.0.0"
   },

@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: tnq
+      POSTGRES_DB: tnq
+      POSTGRES_PASSWORD: Password0
+    ports:
+      - 5432:5432

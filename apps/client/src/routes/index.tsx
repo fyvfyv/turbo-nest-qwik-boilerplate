@@ -5,9 +5,10 @@ import type {UserDto} from '@tnq/types/users/user.dto.js';
 
 export const useUserDetails = routeLoader$(async () => {
   // This code runs only on the server, after every navigation
-  const res = await fetch('http://localhost:3000/user');
-  const user = await res.json();
-  return user as UserDto;
+  const res = await fetch('http://localhost:3000/users');
+  const users = await res.json();
+
+  return users as UserDto[];
 });
 
 export default component$(() => {
@@ -23,7 +24,7 @@ export default component$(() => {
       </div>
 
       <p>
-        {user.value.id} - {user.value.username}
+        {user.value[0]?.id} - {user.value[0]?.username}
       </p>
     </>
   );
