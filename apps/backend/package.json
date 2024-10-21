@@ -28,7 +28,7 @@
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^10.4.1",
     "dotenv": "^16.4.5",
-    "drizzle-kit": "^0.24.1",
+    "drizzle-kit": "^0.26.0",
     "drizzle-orm": "^0.33.0",
     "postgres": "^3.4.4",
     "reflect-metadata": "^0.2.2",
