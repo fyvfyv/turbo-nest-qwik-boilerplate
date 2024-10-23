@@ -128,7 +128,7 @@ importers:
         version: 9.13.0
       eslint-plugin-qwik:
         specifier: ^1.8.0
-        version: 1.8.0(eslint@9.13.0)
+        version: 1.9.1(eslint@9.13.0)
       prettier:
         specifier: 3.3.3
         version: 3.3.3
@@ -2561,8 +2561,8 @@ packages:
     resolution: {integrity: sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==}
     engines: {node: '>=12'}
 
-  eslint-plugin-qwik@1.8.0:
-    resolution: {integrity: sha512-WcyWSnmPbi4OX3nNxsKROu3F6MhP19CHAOVmGihWEJihbA6WWW6X8RB1jNROLqVg75RIZRH6kg3KzfdwesfW/g==}
+  eslint-plugin-qwik@1.9.1:
+    resolution: {integrity: sha512-H8WKYfFsubQh4rcAGYuZh6gX1pReHZGBwCi3l4bJ+7Oa1XqqBr6E8O70+Jv9RoXg9dH99zfWSdWjap9/N/4Pqw==}
     engines: {node: '>=16.8.0 <18.0.0 || >=18.11'}
     peerDependencies:
       eslint: ^8.57.0
@@ -4025,8 +4025,8 @@ packages:
   reflect-metadata@0.2.2:
     resolution: {integrity: sha512-urBwgfrvVP/eAyXx4hluJivBKzuEbSQs9rKWCrCkbSxNv8mxPcUZKeuoF3Uy4mJl3Lwprp6yy5/39VWigZ4K6Q==}
 
-  regexp.prototype.flags@1.5.2:
-    resolution: {integrity: sha512-NcDiDkTLuPR+++OCKB0nWafEmhg/Da8aUPLPMQbK+bxKKCm1/S5he+AqYa4PlMCVBalb4/yxIRub6qkEx5yJbw==}
+  regexp.prototype.flags@1.5.3:
+    resolution: {integrity: sha512-vqlC04+RQoFalODCbCumG2xIOvapzVMHwsyIGM/SIE8fRhFFsXeH8/QQ+s0T0kDAhKc4k30s73/0ydkHQz6HlQ==}
     engines: {node: '>= 0.4'}
 
   remark-mdx@3.0.1:
@@ -7171,7 +7171,7 @@ snapshots:
       object-inspect: 1.13.2
       object-keys: 1.1.1
       object.assign: 4.1.5
-      regexp.prototype.flags: 1.5.2
+      regexp.prototype.flags: 1.5.3
       safe-array-concat: 1.1.2
       safe-regex-test: 1.0.3
       string.prototype.trim: 1.2.9
@@ -7310,7 +7310,7 @@ snapshots:
 
   escape-string-regexp@5.0.0: {}
 
-  eslint-plugin-qwik@1.8.0(eslint@9.13.0):
+  eslint-plugin-qwik@1.9.1(eslint@9.13.0):
     dependencies:
       eslint: 9.13.0
       jsx-ast-utils: 3.3.5
@@ -9329,7 +9329,7 @@ snapshots:
 
   reflect-metadata@0.2.2: {}
 
-  regexp.prototype.flags@1.5.2:
+  regexp.prototype.flags@1.5.3:
     dependencies:
       call-bind: 1.0.7
       define-properties: 1.2.1
